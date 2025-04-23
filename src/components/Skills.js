@@ -1,17 +1,36 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { FaReact, FaNodeJs, FaCss3Alt, FaHtml5, FaJs, FaDatabase, FaAws, FaDocker, FaPython, FaJava } from 'react-icons/fa'; // Add more icons
 
 function Skills() {
   return (
     <section id="skills" className="py-5 my-5">
       <div className="container">
-        <h2 className="text-center mb-5">Skills</h2>
+        <h2 className="text-center mb-5">
+          <motion.h2
+              className="mb-4 text-3xl font-bold"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              >
+                Skills
+            </motion.h2>
+          
+          </h2>
         
         {/* Skill Categories */}
         <div className="row">
           
           {/* Front-End Skills */}
           <div className="col-md-3">
+            <motion.p
+                      className="text-lg text-gray-700 leading-relaxed"
+                      initial={{ opacity: 0, y: 50 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.6, delay: 0.2 }}
+                      viewport={{ once: true }}
+            >
             <h4 className="text-center">Front-End</h4>
             <div className="d-flex flex-column align-items-center">
               <div className="skill-icon"><FaReact size={50} color="#61DAFB" /></div>
@@ -26,10 +45,18 @@ function Skills() {
               </div>
               <p>HTML, CSS, JavaScript</p>
             </div>
+            </motion.p>
           </div>
           
           {/* Back-End Skills */}
           <div className="col-md-3">
+            <motion.p
+                      className="text-lg text-gray-700 leading-relaxed"
+                      initial={{ opacity: 0, y: 50 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.6, delay: 0.2 }}
+                      viewport={{ once: true }}
+            >
             <h4 className="text-center">Back-End</h4>
             <div className="d-flex flex-column align-items-center">
               <div className="skill-icon"><FaNodeJs size={50} color="#68A063" /></div>
@@ -43,10 +70,18 @@ function Skills() {
               </div>
               <p>Python, Java</p>
             </div>
+            </motion.p>
           </div>
 
           {/* Databases */}
           <div className="col-md-3">
+            <motion.p
+                      className="text-lg text-gray-700 leading-relaxed"
+                      initial={{ opacity: 0, y: 50 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.6, delay: 0.2 }}
+                      viewport={{ once: true }}
+            >
             <h4 className="text-center">Databases</h4>
             <div className="d-flex flex-column align-items-center">
               <div className="skill-icon"><FaDatabase size={50} color="#F44336" /></div>
@@ -59,10 +94,18 @@ function Skills() {
                 <p>MongoDB</p>
               </div>
             </div>
+            </motion.p>
           </div>
 
           {/* Cloud & DevOps */}
           <div className="col-md-3">
+            <motion.p
+                      className="text-lg text-gray-700 leading-relaxed"
+                      initial={{ opacity: 0, y: 50 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.6, delay: 0.2 }}
+                      viewport={{ once: true }}
+            >
             <h4 className="text-center">Cloud & DevOps</h4>
             <div className="d-flex flex-column align-items-center">
               <div className="skill-icon"><FaAws size={50} color="#FF9900" /></div>
@@ -75,11 +118,12 @@ function Skills() {
                 <p>Docker</p>
               </div>
             </div>
+            </motion.p>
           </div>
         </div>
 
         {/* Animated Skills with Year Count */}
-        <div className="row mt-5">
+        {/* <div className="row mt-5">
           <div className="col-md-4">
             <h4 className="text-center">Experience</h4>
             <div className="d-flex justify-content-around">
@@ -101,7 +145,7 @@ function Skills() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
