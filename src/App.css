@@ -36,3 +36,77 @@
     transform: rotate(360deg);
   }
 }
+.skill-icon {
+  transition: transform 0.3s;
+  margin-bottom: 10px;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Progress bar hover effect */
+.progress-bar {
+  transition: width 0.3s;
+}
+
+.progress-bar:hover {
+  background-color: #28a745;
+}
+/* General Body */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.home-section {
+  background-image: url('https://example.com/hero-background.jpg'); /* Use your image URL */
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-section .overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.home-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.home-section button {
+  padding: 10px 25px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  background-color: white;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-section button:hover {
+  background-color: #61DAFB; /* React color */
+}
