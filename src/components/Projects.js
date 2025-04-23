@@ -3,13 +3,13 @@ import React from 'react';
 function Projects() {
   // Example project data
   const projects = [
-    {
-      name: "React Todo App",
-      description: "A simple to-do list app with add, delete, and filter functionality.",
-      image: "https://via.placeholder.com/300x150",
-      demoLink: "https://your-demo-link.com",
-      githubLink: "https://github.com/your-username/todo-app",
-    },
+    // {
+    //   name: "React Todo App",
+    //   description: "A simple to-do list app with add, delete, and filter functionality.",
+    //   image: "https://via.placeholder.com/300x150",
+    //   demoLink: "https://your-demo-link.com",
+    //   githubLink: "https://github.com/your-username/todo-app",
+    // },
     {
       name: "Personal Portfolio",
       description: "A clean and responsive personal portfolio built with React and Bootstrap.",
@@ -17,13 +17,13 @@ function Projects() {
       demoLink: "https://your-demo-link.com",
       githubLink: "https://github.com/your-username/portfolio",
     },
-    {
-      name: "Weather App",
-      description: "A weather app that fetches data from an API and shows current weather details.",
-      image: "https://via.placeholder.com/300x150",
-      demoLink: "https://your-demo-link.com",
-      githubLink: "https://github.com/your-username/weather-app",
-    }
+    // {
+    //   name: "Weather App",
+    //   description: "A weather app that fetches data from an API and shows current weather details.",
+    //   image: "https://via.placeholder.com/300x150",
+    //   demoLink: "https://your-demo-link.com",
+    //   githubLink: "https://github.com/your-username/weather-app",
+    // }
   ];
 
   return (
