@@ -6,9 +6,8 @@ function Skills() {
   return (
     <section id="skills" className="py-5 my-5">
       <div className="container">
-        <h2 className="text-center mb-5">
           <motion.h2
-              className="mb-4 text-3xl font-bold"
+              className="mb-5 text-3xl text-center font-bold"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -16,16 +15,13 @@ function Skills() {
               >
                 Skills
             </motion.h2>
-          
-          </h2>
         
         {/* Skill Categories */}
         <div className="row">
           
           {/* Front-End Skills */}
-          <div className="col-md-3">
-            <motion.p
-                      className="text-lg text-gray-700 leading-relaxed"
+           <motion.div
+                      className="col-md-3 text-lg text-gray-700 leading-relaxed"
                       initial={{ opacity: 0, y: 50 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, delay: 0.2 }}
@@ -44,14 +40,12 @@ function Skills() {
                 <div className="skill-icon"><FaJs size={50} color="#F7DF1E" /></div>
               </div>
               <p>HTML, CSS, JavaScript</p>
-            </div>
-            </motion.p>
           </div>
+          </motion.div>
           
           {/* Back-End Skills */}
-          <div className="col-md-3">
-            <motion.p
-                      className="text-lg text-gray-700 leading-relaxed"
+            <motion.div
+                      className="col-md-3 text-lg text-gray-700 leading-relaxed"
                       initial={{ opacity: 0, y: 50 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, delay: 0.2 }}
@@ -70,13 +64,11 @@ function Skills() {
               </div>
               <p>Python, Java</p>
             </div>
-            </motion.p>
-          </div>
+            </motion.div>
 
           {/* Databases */}
-          <div className="col-md-3">
-            <motion.p
-                      className="text-lg text-gray-700 leading-relaxed"
+            <motion.div
+                      className="col-md-3 text-lg text-gray-700 leading-relaxed"
                       initial={{ opacity: 0, y: 50 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, delay: 0.2 }}
@@ -94,13 +86,11 @@ function Skills() {
                 <p>MongoDB</p>
               </div>
             </div>
-            </motion.p>
-          </div>
+            </motion.div>
 
           {/* Cloud & DevOps */}
-          <div className="col-md-3">
-            <motion.p
-                      className="text-lg text-gray-700 leading-relaxed"
+            <motion.div
+                      className="col-md-3 text-lg text-gray-700 leading-relaxed"
                       initial={{ opacity: 0, y: 50 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, delay: 0.2 }}
@@ -118,8 +108,7 @@ function Skills() {
                 <p>Docker</p>
               </div>
             </div>
-            </motion.p>
-          </div>
+            </motion.div>
         </div>
 
         {/* Animated Skills with Year Count */}

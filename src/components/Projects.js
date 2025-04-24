@@ -1,4 +1,6 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import portfolioImage from '../assets/portfolio-thumbnail.png';
 
 function Projects() {
   // Example project data
@@ -13,9 +15,9 @@ function Projects() {
     {
       name: "Personal Portfolio",
       description: "A clean and responsive personal portfolio built with React and Bootstrap.",
-      image: "https://via.placeholder.com/300x150",
-      demoLink: "https://your-demo-link.com",
-      githubLink: "https://github.com/your-username/portfolio",
+      image: portfolioImage,
+      demoLink: "https://sukhvir097.github.io/portfolio/",
+      githubLink: "https://github.com/Sukhvir097/portfolio.git",
     },
     // {
     //   name: "Weather App",
@@ -29,7 +31,21 @@ function Projects() {
   return (
     <section className="py-5 my-5">
       <div className="container">
-        <h2 className="mb-4">Projects</h2>
+        <motion.h2
+          className="mb-4 text-3xl font-bold"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+        Projects
+        </motion.h2>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
+        >
         <div className="row">
           {projects.map((project, index) => (
             <div key={index} className="col-md-4">
@@ -45,6 +61,7 @@ function Projects() {
             </div>
           ))}
         </div>
+        </motion.div>
       </div>
     </section>
   );
