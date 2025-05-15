@@ -55,11 +55,13 @@
 }
 /* General Body */
 body {
-  font-family: 'Arial', sans-serif;
+    font-family: 'Yu Gothic UI', 'YuGothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
 
 /* Hero Section */
 .home-section {
