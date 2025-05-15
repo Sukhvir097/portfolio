@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaReact, FaNodeJs, FaCss3Alt, FaHtml5, FaJs, FaDatabase, FaAws, FaDocker, FaPython, FaJava } from 'react-icons/fa'; // Add more icons
-
+import { FaReact, FaNodeJs, FaCss3Alt, FaHtml5, FaJs, FaDatabase, FaAws, FaDocker, FaPython, FaJava } from 'react-icons/fa'; 
 function Skills() {
   return (
     <section id="skills" className="py-5 my-5">
@@ -110,31 +109,6 @@ function Skills() {
             </div>
             </motion.div>
         </div>
-
-        {/* Animated Skills with Year Count */}
-        {/* <div className="row mt-5">
-          <div className="col-md-4">
-            <h4 className="text-center">Experience</h4>
-            <div className="d-flex justify-content-around">
-              <div>
-                <h5>React</h5>
-                <p>3+ Years</p>
-              </div>
-              <div>
-                <h5>Node.js</h5>
-                <p>2+ Years</p>
-              </div>
-              <div>
-                <h5>Git</h5>
-                <p>4+ Years</p>
-              </div>
-              <div>
-                <h5>AWS</h5>
-                <p>1+ Year</p>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
     </section>
   );
