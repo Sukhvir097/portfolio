@@ -98,7 +98,7 @@ const Home = () => {
               <span className="blink-caret">|</span>
             </p>
 
-            <Link to="/skills" smooth={true} duration={1000}>
+            <Link to="/skills" >
               <button
                 className="btn btn-primary btn-lg"
                 style={{
