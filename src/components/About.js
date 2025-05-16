@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 function About() {
   return (
-    <section className="py-5 my-5">
+    <section className="py-5 mt-5 min-vh-100">
       <div className="container">
         <motion.h2
           className="mb-4 text-3xl font-bold"

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { FaReact, FaNodeJs, FaCss3Alt, FaHtml5, FaJs, FaDatabase, FaAws, FaDocker, FaPython, FaJava } from 'react-icons/fa'; 
 function Skills() {
   return (
-    <section id="skills" className="py-5 my-5">
+    <section id="skills" className="py-5 mt-5 min-vh-100">
       <div className="container">
           <motion.h2
               className="mb-5 text-3xl text-center font-bold"
